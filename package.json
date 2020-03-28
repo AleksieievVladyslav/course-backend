@@ -1,0 +1,32 @@
+{
+  "name": "course-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksieievVladyslav/course-backend.git"
+  },
+  "keywords": [
+    "NURE",
+    "course",
+    "backend"
+  ],
+  "author": "Vladyslav Aleksieiev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksieievVladyslav/course-backend/issues"
+  },
+  "homepage": "https://github.com/AleksieievVladyslav/course-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.2"
+  }
+}
