@@ -1,8 +1,10 @@
-const express = require('express');
-const router = express.Router();
-const userController = require('../controllers/userController')
+import { Router } from 'express';
+import { user as controller } from '../controllers';
+import { releaseToken } from '../middleware';
 
-router.post('/signup', userController.signup);
-router.post('/signin', userController.signin);
-
-module.exports = router;
+export const user = Router()
+  .get('/', releaseToken, controller.get)
+  .post('/', controller.post)
+  .delete('/', releaseToken, controller.delete)
+  .put('/', releaseToken, controller.update)
+  .post('/login', controller.login);
