@@ -10,11 +10,10 @@ import {
   category,
   cloth,
 } from './app/routers';
-require('dotenv').config();
 
 const app = express();
 
-connect(`mongodb+srv://${process.env.MDB_LOGIN}:${process.env.MDB_PASSWORD}@cluster0-dnfdv.mongodb.net/database?retryWrites=true&w=majority`, { 
+connect(`mongodb+srv://admin:admin@cluster0-dnfdv.mongodb.net/database?retryWrites=true&w=majority`, { 
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
