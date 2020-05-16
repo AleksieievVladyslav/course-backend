@@ -1,6 +1,4 @@
 {
     "env": {
-        "PORT": 9000,
-        "MDB_PASSWORD": "admin"
     }
 }
